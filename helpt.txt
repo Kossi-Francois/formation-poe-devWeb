@@ -1,2 +1,6 @@
 
 intervenant repo: https://github.com/jochri3/dev-poe-salesforce-janvier-2022
+
+my repo:
+    git remote add origin https://github.com/Kossi-Francois/formation-poe-devWeb.git
+    git push -u origin main
