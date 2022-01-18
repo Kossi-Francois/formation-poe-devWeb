@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>TP5</h3>
+
+    <form action="">
+      <div>
+        <label for="id-nom-prenom"> Nom-Prenom: </label>
+        <input
+          type="text"
+          id="id-nom-prenom-txtfield"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="id-birthday"> Lieu et Date de naissance </label>
+
+        <input
+          type="date"
+          id="id-birthday-date-field"
+          required
+          value="2022-01-18"
+          min="1000-01-01"
+          max="3000-12-31"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="id-civilité"> Civilité </label>
+
+        <select name="cars" id="cars">
+          <option value="Mme">Mme</option>
+          <option value="Mr">Mr</option>
+        </select>
+        <br />
+      </div>
+    </form>
+  </body>
+</html>
