@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TP5</1>
+
+        <h2>Fiche d’inscription des étudiants à l’université</h2>
+
+    <form action="">
+      <div>
+        <label for="id-nom-prenom"> Nom-Prenom: </label>
+        <input
+          type="text"
+          id="id-nom-prenom"
+          placeholder="ex: TOTO"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />
+        <br />
+      </div>
+
+
+      <div>
+        <label for="id-birthday-place"> Lieu de naissance: </label>
+        <input
+          type="text"
+          id="id-birthday-place"
+          placeholder="ex: Lune"
+          required
+          minlength="1"
+          maxlength="50"
+          size="10"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="id-birthday"> Date de naissance </label>
+
+        <input
+          type="date"
+          id="id-birthday"
+          required
+          value="2022-01-18"
+          min="1000-01-01"
+          max="3000-12-31"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="pays">Pays d’origine : </label>
+        <select id="pays">
+          <option>-- Veuillez choisir un pays --</option>
+          <option>France</option>
+          <option>Espagne</option>
+          <option>Italie</option>
+        </select>
+        <br />
+      </div>
+
+      <div>
+        <label for="id-civilité"> Civilité </label>
+
+        <select name="cars" id="cars">
+          <option value="Mme">Mme</option>
+          <option value="Mr">Mr</option>
+        </select>
+        <br />
+      </div>
+
+      <div>
+        <label for="pourcentage">
+          Pourcentage ou moyenne obtenu en BAC :
+        </label>
+        <input
+          type="number"
+          id="pourcentage"
+          placeholder="ex:99.99"
+          min="10"
+          max="100"
+        />
+        %
+        <br />
+      </div>
+
+      <div>
+        <label for="formation">Formation : </label>
+        <select id="formation">
+          <option>-- Veuillez choisir une formation --</option>
+          <option>Math</option>
+          <option>Info</option>
+          <option>Chimiste</option>
+        </select>
+        <br />
+      </div>
+
+      <div>
+        <label for="id-autre-formation"> Autre formation: </label>
+        <input
+          type="text"
+          id="id-autre-formation"
+          placeholder="ex: Restaurateur sur Mars"
+          required
+          minlength="2"
+          maxlength="80"
+          size="18"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="email"> Email: </label>
+        <input type="email" id="email" placeholder="ex: tot@gmail" />
+        <br />
+      </div>
+
+      <div>
+        <label for="telephone"> Telephone: </label>
+        <input type="number" id="telephone" placeholder="ex: 07777777" />
+        <br />
+      </div>
+
+      <div>
+        <br />
+        <label for="bio"> Lettre de motivation: </label>
+        <textarea
+          cols="30"
+          rows="5"
+          name=""
+          id="bio"
+          placeholder="Expliquez pourquoi vous voulez rejoindre les avengers"
+        ></textarea>
+        <br />
+      </div>
+
+      <div>
+        <label for="submit"> Submit: </label>
+        <input type="submit" name="" id="submit" />
+        <br />
+      </div>
+    </form>
+  </body>
+</html>
