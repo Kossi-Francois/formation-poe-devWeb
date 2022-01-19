@@ -1,0 +1,24 @@
+
+
+
+/*  ! important > #id > .class > html element */
+
+p {
+  background-color: lightgray;
+  font-size: 20px;
+}
+
+.uneclasse{
+    color: red;
+    font-style: italic;
+}
+
+
+#first-p{
+color: green;
+}
+
+p.uneclasse{
+    color: blue;
+    
+}
