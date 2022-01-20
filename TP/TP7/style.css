@@ -1,0 +1,146 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    /*
+    font-family: "Ubuntu";
+    */
+}
+
+
+div{
+    margin: 5%;
+    padding: 0.5%;
+}
+
+
+main{
+    padding: 50px;
+    background-color: #C8C8C8;
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+
+h2{
+    color: red;
+    font-weight: 900;
+}
+
+h3, h4{
+    margin: 10px;
+}
+
+
+
+a{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/***div section**/
+
+
+.div-description{
+
+}
+
+
+.div-table{
+
+}
+
+
+.div-img-server{
+border: 3px solid red;
+border-radius: 10px;
+padding: 20px;
+
+
+
+background-color: #333333;
+
+color: white;
+
+text-align: center;
+
+}
+
+img{
+    width: 100%;
+}
+
+
+.p-physiq-role{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 4px dashed ;
+    background-color: #B7B7B7;
+    color: #5044AE;
+
+    
+}
+
+
+
+
+/**table***/
+
+
+table{
+    
+    margin: 10px;
+    border-collapse: collapse;
+    font-weight: 700;
+    padding: 10px;
+}
+
+
+
+
+.col-1{
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+
+tbody>tr:nth-child(even){
+    
+}
+
+
+tbody>tr:nth-child(odd){
+    background-color: #DDDDDD;
+}
+
+td, th{
+    padding: 5px;
+}
+
+thead{
+    background-color: #333333 ;
+    color: white;
+    
+}
+
+tbody>tr:hover{
+cursor: pointer;
+background-color: #999999;
+
+}

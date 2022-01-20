@@ -1,0 +1,48 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+.para {
+  color: orangered;
+  background-color: rgb(75, 54, 90);
+  text-align: center;
+  margin-bottom: 100.99999999999999px;
+  
+}
+
+
+
+.technos {
+  font-weight: bold;
+  color: red;
+}
+
+
+
+
+.tech-title{
+    text-decoration: underline;
+}
+
+ul.list-SGBD{
+    color: red;
+}
+
+div p {
+    background-color: grey;
+}
+
+.toto > p {
+    font-weight: bold;
+}
+
+
+.joie{
+    border: 10px double black;
+    border-radius: 25px 25px  1px 1px;
+    padding: 5px;
+}

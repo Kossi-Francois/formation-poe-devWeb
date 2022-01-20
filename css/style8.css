@@ -1,0 +1,21 @@
+.box{
+  width: 200px;
+  height: 200px;
+  
+}
+
+
+.first{
+    background-color: blueviolet;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.second{
+    background-color: brown;
+}
+
+.third{
+    background-color: chocolate;
+}

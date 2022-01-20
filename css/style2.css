@@ -1,0 +1,10 @@
+
+
+.parent  p{
+    color: red;
+}
+
+
+div.parent > p{
+    background-color: lightgray;
+}
