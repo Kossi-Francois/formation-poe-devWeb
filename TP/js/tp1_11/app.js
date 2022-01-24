@@ -265,35 +265,48 @@ let tp11 = () => {
   console.log(output);
 };
 
-tp11();
+//tp11();
 
 ///////////////
 
-/*
+let miniTp1 = () => {
+  let name = "Christian Lisangola";
+  name = name.toLowerCase();
+  name = name.replace(/\s/g, "");
 
-let name = "Christian Lisangola";
-name = name.toLowerCase();
-name = name.replace(/\s/g, "");
+  const listVoyelles = ["a", "e", "i", "o", "u", "y"];
 
-const listVoyelles = ["a", "e", "i", "o", "u", "y"];
+  let consonnes = "";
+  let voyelles = "";
 
-let consonnes = "";
-let voyelles = "";
+  for (let i = 0; i < name.length; i++) {
+    console.log(`${i} => ${name[i]}`); //name[0]
 
+    listVoyelles.includes(name[i])
+      ? (voyelles += name[i])
+      : (consonnes += name[i]);
+  }
 
-for (let i = 0; i < name.length; i++) {
-  console.log(`${i} => ${name[i]}`); //name[0]
+  console.log(consonnes);
+  console.log(voyelles);
 
-  listVoyelles.includes(name[i])
-    ? (voyelles += name[i])
-    : (consonnes += name[i]);
-}
+  const age = 12;
+  age === 12 ? console.log("egal à 12") : console.log("different de 12");
+};
 
-console.log(consonnes)
-console.log(voyelles)
+//////////////////////////
 
+const assert = function (condition, message) {
+  if (!condition) throw Error("Assert failed: " + (message || ""));
+};
 
-const age = 12;
-( age === 12) ? ( console.log("egal à 12")) : ( console.log("different de 12"))
+let tp12_13 = () => {
+  const array = [0, 1, 2, 3, 4, 5, 6];
 
-*/
+  const arraySum = array.reduce((total, elt) => total + elt);
+  const arrayMean = arraySum / array.length;
+
+  return { sum: arraySum, mean: arrayMean };
+};
+
+//console.log(tp12_13());
