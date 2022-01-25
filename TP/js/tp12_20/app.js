@@ -43,13 +43,14 @@ let paerseTab = (tabStr) => {
 
       console.log(n);
 
-      console.log(tabStr.search(/\[/gi));
-
       k++;
       if (k >= 1000) {
         break;
       }
+
     }
+
+    return output;
   } else {
      
     return subBlock(tabStr)[0];
@@ -57,9 +58,6 @@ let paerseTab = (tabStr) => {
 
   
 
-  console.log(output);
-
-  return output;
 };
 
 const myTabArr = "[ [ 1, 3, 4], [5, 8, 9] ]";
@@ -137,7 +135,7 @@ let testTP15 = ()=>{
 
 
 
-let tp16_17 = (array) => {
+let tp16_17_19 = (array) => {
   let n = undefined;
 
   if (array == undefined) {
@@ -150,15 +148,21 @@ let tp16_17 = (array) => {
   let diag1 = 0;
   let diag2 = 0;
 
+  
   for (let i = 0; i < array.length; i++) {
     diag1 += array[i][i];
     diag2 += array[i][array.length - 1 - i];
   }
 
   return {diag1: diag1, diag2:diag2, diag3: diag2 +diag1}
+
+  
 };
 
+//     [[1, 2],  [3, 4]]
 
+
+//console.log(tp16_17());
 
 let testTP16_17 = () => {
   const Liste1 = [
@@ -167,10 +171,67 @@ let testTP16_17 = () => {
     [1, 2, 3],
   ];
 
-  let { diag1, diag2, diag3 } = tp16_17(Liste1);
-  console.log(tp16_17(Liste1));
+  let { diag1, diag2, diag3 } = tp16_17_19(Liste1);
+  console.log(tp16_17_19(Liste1));
 
-   ( diag1 == 12 && diag2 ==13  ) ? console.log(true) : console.log(false)
+   ( diag1 == 12 && diag2 == 13 ) ? console.log(true) : console.log(false)
 };
 
-testTP16_17()
+//testTP16_17()
+
+
+////////////
+let tp18 = (a, b) => a + b ;
+
+
+
+////////////
+
+
+
+
+let tp20 = (array,  nbrRotat = 2, sensRotat = "droite") => {
+
+//// shift     = pop(0)   O(n)
+//// push      = add(n)   O(1)
+
+//// unshift() = add(0)   O(n)
+//// pop       = pop(n)   O(1)
+
+    if (sensRotat == "droite") {
+      for (let i = 0; i < nbrRotat; i++) {
+        array.unshift(array.pop());
+      }
+    }
+
+    // nbrOps = nbrRotat * 1 + nbrRotat * n = nbrRotat(n+1) = O(n)
+    else {
+      for (let i = 0; i < nbrRotat; i++) {
+        array.push(array.shift());
+      }
+    }
+
+    return array;
+
+}
+
+// SC  = O(n)
+// RTC = O(n)
+
+
+
+ let testTP20 = () => {
+    const Tableau = [1, 2, 3, 4];
+
+    const res = tp20(Tableau, 2, "droite");
+    console.log(res);
+
+  // ( res == [3, 4, 1, 2]) ? console.log(true) : console.log(false);
+
+ }
+
+testTP20()
+
+
+
+
